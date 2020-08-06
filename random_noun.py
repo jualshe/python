@@ -5,4 +5,4 @@ def random_noun():
     if random_num == 0:
         return "llama"
     else:
-        return "apple"
+        return "sofa"
