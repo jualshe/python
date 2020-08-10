@@ -11,7 +11,13 @@ print (nested_list[0][0])
 #             Name    Capital  Populations (millions)
 countries = [['China','Beijing',1350],
              ['India','Delhi',1210],
-             ['Romania','Bucharest',21],
+             ['Romania','Bucharest',21.],
              ['United States','Washington',307]]
 india_capital=countries[1][1]
 print india_capital
+
+population_of_china = countries[0][2]
+population_of_romania = countries[2][2]
+multiple = population_of_china/population_of_romania
+
+print multiple
