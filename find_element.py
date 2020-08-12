@@ -27,11 +27,18 @@ def find_element(p,t):
 	return -1
 
 
+#option3
+#easy way but without -1
+def find_element(p,w):
+	for index = p.index(w):
+		return index
+	else:
+		return -1	
 
-#easy way 
-# def find_element(p,w):
-# 	index = p.index(w)
-# 	return index
+#option4 
+# <value> in <list> output is True
+# p=[0,1,2]
+#print 3 in p
 
 #print find_element([1,2,3],3)
 #>>> 2
