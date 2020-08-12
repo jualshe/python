@@ -6,6 +6,7 @@ stooges.append('Shemp')
 
 [0,1]+[2,3] -> [0,1,2,3]
 
+#del(<list>)[element]
 
 #len(<list>)
 len([0,1]) ->2
