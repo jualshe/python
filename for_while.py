@@ -47,3 +47,37 @@ print(wizard_list[4])
 ololo
 print(wizard_list[5])
 looking
+
+
+h=[1,2,3]
+ for i in h:
+	print(i)
+	print(i)
+	print(i)
+1
+1
+1
+2
+2
+2
+3
+3
+3
+
+for i in h:
+	print(i)
+	for j in h:
+		print(j)
+
+1
+1
+2
+3
+2
+1
+2
+3
+3
+1
+2
+3
