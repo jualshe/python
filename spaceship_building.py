@@ -1,0 +1,1 @@
+def spaceship_building(cans):
