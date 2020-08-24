@@ -25,7 +25,7 @@ def variable_test():
 print(variable_test())
 
 
-	another_variable = 100
+another_variable = 100
 def variable_test2():
 	first_variable = 10
 	second_variable = 20
