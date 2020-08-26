@@ -1,4 +1,7 @@
-moonWeight = 9.075
-for i in range (2000,2015):
-	moonWeight = moonWeight + 1    
-	print (i, "year -", moonWeight, "kilos")
+def moonWeight(initialWeight, increaseNumber):
+	moonWeight = initialWeight * increaseNumber
+	for i in range (2020,2035):
+		moonWeight = moonWeight + 1    
+		print (i, "year -", moonWeight, "kilos")
+
+#print moonWeight(55,0.25)
