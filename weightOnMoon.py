@@ -1,3 +1,4 @@
+import sys
 def moonWeight(initialWeight, increaseNumber, age):
 	print("what is your weight?")
 	initialWeight = int(sys.stdin.readline())

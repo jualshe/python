@@ -1,8 +1,8 @@
 daysOfMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 def isLeapYear (year):
+
 	#return true or false
-#____________________________________________________________
 
 def nextDay(year, month, day): #if every month has 30 days
 	if day < 30:
@@ -12,23 +12,21 @@ def nextDay(year, month, day): #if every month has 30 days
 			return year, mont+1, 1
 		else:
 			return year+1,1,1
-#____________________________________________________________
+
 def daysBetweenDates(y1,m1,d1,y2,m2,d2):
 	days = 0
 
 	if y1<y2:
-		y=(y2-y1)*365
+		y=y2-y1*365
 	if m1<m2:
-		m=(m2-m1)*30
+		m=m2-m1*30
 	while d1<d2:
-		d=(d2-d1)*1
-	days = y+m+d
-	return days
+		d=d2-d1*1
 
-print daysBetweenDates(2000,10,30,2010,20,20)
+	return y+m+d
 
-#____________________________________________________________
-#helper procedure - check if first date is before the second date
+
+
 def dateIsBefore(y1,m1,d1,y2,m2,d2):
 	if y1<y2:
 		return True
@@ -41,9 +39,8 @@ def dateIsBefore(y1,m1,d1,y2,m2,d2):
 
 print dateIsBefore(2000,10,30,2010,20,20)
 
-#____________________________________________________________
 Algorithm Pseudocode
-days = 0 # of days in month1 - day1
+days = # of days in month1 - day1
 month1 += 1
 while month1 < month2:
     days += # of days in month1
