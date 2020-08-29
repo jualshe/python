@@ -1,4 +1,9 @@
 def daysBetweenDates(year1,month1,day1,year2,month2,day2):
+	"""Returns the number of days between year1/month1/day1
+       and year2/month2/day2. Assumes inputs are valid dates
+       in Gregorian calendar."""
+    #assertion if the input is not valid!
+	assert not dateIsBefore(year2,month2,day2,year1,month1,day1)
 	days = 0
 	while dateIsBefore(year1,month1,day1,year2,month2,day2):
 		year1,month1,day1 = nextDay(year1,month1,day1)
@@ -9,21 +14,22 @@ print daysBetweenDates(2000,10,30,2010,20,20)
 
 #____________________________________________________________
 #helper procedure - check if first date is before the second date
-def dateIsBefore(y1,m1,d1,y2,m2,d2):
-	if y1<y2:
-		return True
-	if y1 ==y2:
-		if m1<m2:
-			return True
-		if m1 ==m2:
-			return  d1<d2
-		return false
+    """Returns True if year1-month1-day1 is before year2-month2-day2. Otherwise, returns False."""
+def dateIsBefore(year1, month1, day1, year2, month2, day2):
+	if year1 < year2:
+        return True
+    if year1 == year2:
+        if month1 < month2:
+            return True
+        if month1 == month2:
+            return day1 < day2
+    return False      
 
 print dateIsBefore(2000,10,30,2010,20,20)
 
 
 #____________________________________________________________
-#if every month has 30 days
+#    """Simple version: assume every month has 30 days"""
 def nextDay(year, month, day): 
 	if day < 30:
 		return year, month, day+1
@@ -86,6 +92,21 @@ while date1 is before date2:
 return days
 
 
+#testcases
+def test():
+    test_cases = [((2012,1,1,2012,2,28), 58), 
+                  ((2012,1,1,2012,3,1), 60),
+                  ((2011,6,30,2012,6,30), 366),
+                  ((2011,1,1,2012,8,8), 585 ),
+                  ((1900,1,1,1999,12,31), 36523)]
+    
+    for (args, answer) in test_cases:
+        result = daysBetweenDates(*args)
+        if result != answer:
+            print "Test with data:", args, "failed"
+        else:
+            print "Test case passed!"
 
+test()
 
 	
