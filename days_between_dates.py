@@ -1,3 +1,17 @@
+#that always returns 30
+def daysInMonth(year, month):
+	if month == 1 or month == 3 or month == 5 or 
+
+	return 30
+
+
+def test():
+	assert nextDay(2013,1,1)==(2013,1,2)
+	assert nextDay(2013,4,30)==(2013,5,1)
+	assert nextDay(2012,12,31)==(2013,1,1)
+	print "tests are passed!"
+
+
 def daysBetweenDates(year1,month1,day1,year2,month2,day2):
 	"""Returns the number of days between year1/month1/day1
        and year2/month2/day2. Assumes inputs are valid dates
@@ -31,7 +45,7 @@ print dateIsBefore(2000,10,30,2010,20,20)
 #____________________________________________________________
 #    """Simple version: assume every month has 30 days"""
 def nextDay(year, month, day): 
-	if day < 30:
+	if day < daysInMonth(year, month):
 		return year, month, day+1
 	else:
 		if month < 12:
