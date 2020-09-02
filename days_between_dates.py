@@ -1,3 +1,6 @@
+#given you BD and the current date, calculate your age in days.Compensate for leap year.
+#assume that the birthday and current date are correct dates (and no time travel)
+
 def isLeapYear(year):
 	if year % 400 == 0:
 		return True
@@ -22,7 +25,7 @@ def daysInMonth(year, month):
 	return 30
 
 
-def test():
+def mytest():
 	assert daysBetweenDates(2013, 1, 1, 2013, 1, 1) == 0
 	assert daysBetweenDates(2013, 1, 1, 2013, 1, 2) == 0
 	assert nextDay(2013,1,1) == (2013,1,2)
@@ -31,8 +34,9 @@ def test():
 	assert nextDay(2013,2,28) == (2013,3,1)
 	assert nextDay(2013,9,30) == (2013,10,1)
 	assert nextDay(2012, 2, 28) == (2012, 2, 29)
-	assert daysBetweenDates(2012, 1, 1, 2013, 1, 1)
+	assert daysBetweenDates(2012, 1, 1, 2013, 1, 1) == 366
 	assert daysBetweenDates(2013, 1, 1, 2014, 1, 1) == 365
+	assert daysBetweenDates(2013, 1, 24, 2013, 6, 29) == 156
 	print "tests are passed!"
 
 
