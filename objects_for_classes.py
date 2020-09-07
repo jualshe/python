@@ -23,3 +23,9 @@ class Giraffes(Mammals):
               def eat_leaves_from_trees(self):
 					pass
 reginald = Giraffes()
+
+reginald = Giraffes()
+reginald.move()
+reginald.eat_leaves_from_trees()
+
+
