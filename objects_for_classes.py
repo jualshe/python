@@ -14,3 +14,12 @@ class Animals(Animate):
                     pass
               def eat_food(self):
                     pass
+
+class Mammals(Animals):
+              def feed_young_with_milk(self):
+					pass	 
+
+class Giraffes(Mammals):
+              def eat_leaves_from_trees(self):
+					pass
+reginald = Giraffes()
