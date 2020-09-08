@@ -28,4 +28,15 @@ reginald = Giraffes()
 reginald.move()
 reginald.eat_leaves_from_trees()
 
+harold = Giraffes()
+harold.move()
+
+class Animals(Animate):
+              def breathe(self):
+                    print('breathe')
+              def move(self):
+                    print('move')
+              def eat_food(self):
+                    print('eat_food')
+
 
