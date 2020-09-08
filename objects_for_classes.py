@@ -39,4 +39,12 @@ class Animals(Animate):
               def eat_food(self):
                     print('eat_food')
 
+class Mammals(Animals):
+              def feed_young_with_milk(self):
+                    print('feed_young_with_milk')
+
+class Giraffes(Mammals):
+              def eat_leaves_from_trees(self):
+                    print('eat_leaves_from_trees')
+
 
