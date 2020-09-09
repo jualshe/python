@@ -47,4 +47,7 @@ class Giraffes(Mammals):
               def eat_leaves_from_trees(self):
                     print('eat_leaves_from_trees')
 
-
+reginald = Giraffes()
+harold = Giraffes()
+reginald.move()
+harold.eat_leaves_from_trees()
