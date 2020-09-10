@@ -51,3 +51,8 @@ reginald = Giraffes()
 harold = Giraffes()
 reginald.move()
 harold.eat_leaves_from_trees()
+
+
+mport turtle
+avery = turtle.Pen() 
+kate = turtle.Pen()
