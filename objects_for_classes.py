@@ -69,3 +69,7 @@ kate.forward(100)
 jacob = turtle.Pen()
 jacob.left(100)
 jacob.forward(50)
+
+
+reginald = Giraffes()
+reginald.move()
