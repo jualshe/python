@@ -73,3 +73,9 @@ jacob.forward(50)
 
 reginald = Giraffes()
 reginald.move()
+
+
+eginald = Giraffes() 
+reginald.breathe() 
+reginald.eat_food()
+reginald.feed_young_with_milk()
