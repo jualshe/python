@@ -79,3 +79,10 @@ eginald = Giraffes()
 reginald.breathe() 
 reginald.eat_food()
 reginald.feed_young_with_milk()
+
+reginald.move()
+
+class Giraffes(Mammals):
+              def find_food(self):
+self.move()
+print("I found food") self.eat_food()
