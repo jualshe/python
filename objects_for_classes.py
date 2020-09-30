@@ -85,6 +85,17 @@ reginald.feed_young_with_milk()
 reginald.move()
 
 class Giraffes(Mammals):
-              def find_food(self):
-self.move()
-print("I found food") self.eat_food()
+	def find_food(self):
+		self.move()
+		print("I found food") 
+		self.eat_food()
+	def eat_leaves_from_trees(self): 
+		self.eat_food()
+	def dance_a_jig(self): 
+		self.move()
+		self.move()
+		self.move() 
+		self.move()
+
+
+
