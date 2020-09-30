@@ -98,4 +98,5 @@ class Giraffes(Mammals):
 		self.move()
 
 
-
+reginald = Giraffes()
+reginald.dance_a_jig()
