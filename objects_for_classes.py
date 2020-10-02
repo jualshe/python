@@ -100,3 +100,7 @@ class Giraffes(Mammals):
 
 reginald = Giraffes()
 reginald.dance_a_jig()
+
+class Giraffes:
+              def __init__(self, spots):
+self.giraffe_spots = spots
