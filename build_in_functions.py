@@ -40,3 +40,7 @@ dir(['this is', 'short', 'list'])
 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
 
 dir(1)
+
+popcorn = 'I like popcorn!'
+dir(popcorn)
+help(popcorn.upper)
