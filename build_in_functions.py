@@ -52,3 +52,7 @@ eval('10*5')
 
 eval('''if True:
 print("it's not gonna work")''')
+
+our_calculation = input('enter expression: ')
+12*52
+eval(your_calculation)
