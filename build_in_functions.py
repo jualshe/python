@@ -44,3 +44,11 @@ dir(1)
 popcorn = 'I like popcorn!'
 dir(popcorn)
 help(popcorn.upper)
+
+
+#eval
+
+eval('10*5')
+
+eval('''if True:
+print("it's not gonna work")''')
