@@ -30,7 +30,7 @@ year = input('Year of birth: ')
 if not bool(year.rstrip()):
               print('enter the year')
 
-#dir
+#dir  - what functions can be used 
 dir(['this is', 'short', 'list'])
 ['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__doc__', '__eq__',
 '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__',
@@ -47,12 +47,18 @@ help(popcorn.upper)
 
 
 #eval
-
+#if call eval('print("wow!")') - > print("wow!") will be executed
 eval('10*5')
-
+50
+#this not gonna work
 eval('''if True:
 print("it's not gonna work")''')
 
-our_calculation = input('enter expression: ')
+your_calculation = input('enter expression: ')
 12*52
 eval(your_calculation)
+print(your_calculation)
+
+#exec
+my_small_program = '''print('бутерброд') print('с колбасой')'''
+exec(my_small_program)
