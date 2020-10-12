@@ -60,5 +60,9 @@ eval(your_calculation)
 print(your_calculation)
 
 #exec
-my_small_program = '''print('бутерброд') print('с колбасой')'''
+my_small_program = '''print('sandwich') print('with ham')'''
 exec(my_small_program)
+
+#float
+float('12')
+12.0
