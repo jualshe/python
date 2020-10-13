@@ -66,3 +66,11 @@ exec(my_small_program)
 #float
 float('12')
 12.0
+
+float('123.456789') 
+123.456789
+
+your_age = input('enter you age: ')
+age = float(your_age)
+if age > 13:
+print('you are %s years older, than needed' % (age - 13))
