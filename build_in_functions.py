@@ -74,3 +74,33 @@ your_age = input('enter you age: ')
 age = float(your_age)
 if age > 13:
 print('you are %s years older, than needed' % (age - 13))
+
+#int
+int(123.456)
+123
+
+#len
+>>> len('1234567890')
+10
+
+creature_list = ['dino', 'mighty', 'colly', 'sabazun', 'mokriy piven']
+print(len(creature_list))
+5
+
+enemies_map = { 'batman':'joker',
+	'superman':'lex lutor',
+	'spiderman':'green goblin'}
+len(enemies_map)
+3
+
+
+fruit = ['apple', 'banana', 'mandarin', 'papaya'] 
+length = len(fruit)
+for x in range(0, length):
+	print('fruit with an index %s: %s' % (x, fruit[x]))
+
+
+#max and min
+numbers = [5, 4, 10, 30, 22]
+print(max(numbers))
+30
