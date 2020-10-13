@@ -104,3 +104,12 @@ for x in range(0, length):
 numbers = [5, 4, 10, 30, 22]
 print(max(numbers))
 30
+
+string='chipucheka'
+print(max(string))
+
+print(max(10, 300, 450, 50, 90))
+      
+
+numbers = [5, 4, 10, 30, 22]
+print(min(numbers))
