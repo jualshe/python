@@ -121,3 +121,18 @@ if max(player_guesses) > guess_this_number:
 	print('you lost!')
 else:
 	print('you won!')
+
+#range
+for x in range(0, 5):
+              print(x)
+
+print(list(range(0, 5)))
+[0, 1, 2, 3, 4]
+
+
+count_by_twos = list(range(0, 30, 2))
+print(count_by_twos)
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+
+count_down_by_twos = list(range(40, 10, -2))
+print(count_down_by_twos)
