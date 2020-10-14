@@ -136,3 +136,12 @@ print(count_by_twos)
 
 count_down_by_twos = list(range(40, 10, -2))
 print(count_down_by_twos)
+[40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12]
+
+
+#sum
+my_list_of_numbers = list(range(0, 500, 50))
+print(my_list_of_numbers)
+[0, 50, 100, 150, 200, 250, 300, 350, 400, 450]
+print(sum(my_list_of_numbers))
+2250
