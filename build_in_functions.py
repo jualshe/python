@@ -113,3 +113,11 @@ print(max(10, 300, 450, 50, 90))
 
 numbers = [5, 4, 10, 30, 22]
 print(min(numbers))
+
+
+guess_this_number = 61
+player_guesses = [12, 15, 70, 45]
+if max(player_guesses) > guess_this_number:
+	print('you lost!')
+else:
+	print('you won!')
