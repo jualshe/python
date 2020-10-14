@@ -145,3 +145,24 @@ print(my_list_of_numbers)
 [0, 50, 100, 150, 200, 250, 300, 350, 400, 450]
 print(sum(my_list_of_numbers))
 2250
+
+#working with files - open
+test_file = open('/Users/julia/Documents/GitHub/python/test1.txt','w')
+test_file.write('this is a test filik')
+test_file.close()
+print(test_file.read())
+
+
+some = 'this if the way you are bad it suits you read for something encryption has gone important not messages so'
+dir(some)
+help(some)
+
+some = 'this if the way you are bad it suits you read for something encryption has gone important not messages so'
+x = some.split()
+print (x [1::2]) # every other item after the second
+
+
+
+
+
+
