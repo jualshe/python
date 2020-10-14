@@ -161,8 +161,14 @@ some = 'this if the way you are bad it suits you read for something encryption h
 x = some.split()
 print (x [1::2]) # every other item after the second
 
-
-
-
-
-
+#copy file
+f = open ('/Users/julia/Documents/GitHub/python/test.txt')
+print(f.read())
+f2=open ('/Users/julia/Documents/GitHub/python/f2.txt','w')
+>>> f2.write("Hi there!\
+\
+This is a test .txt file\
+\
+Enjoy!")
+f2.close()
+print(f2.read())
