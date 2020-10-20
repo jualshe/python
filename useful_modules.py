@@ -27,4 +27,10 @@ print(more_animals[0].species)
 gippogriph
 
 print(more_animals[1].species)
-химера
+himera
+
+my_animals[0].species = 'vampire'
+print(my_animals[0].species) 
+vampire
+print(more_animals[0].species) 
+vampire
