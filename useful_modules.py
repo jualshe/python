@@ -34,3 +34,10 @@ print(my_animals[0].species)
 vampire
 print(more_animals[0].species) 
 vampire
+
+sally = Animal('sphinx', 4, 'sandy')
+my_animals.append(sally)
+print(len(my_animals))
+4
+print(len(more_animals))
+3
