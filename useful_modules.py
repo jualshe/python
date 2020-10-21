@@ -48,3 +48,11 @@ print(my_animals[0].species)
 dragon
 print(more_animals[0].species)
 vampire
+
+
+#keyword module
+import keyword
+print(keyword.iskeyword('if'))
+True
+print(keyword.iskeyword('ozwald'))
+False 
