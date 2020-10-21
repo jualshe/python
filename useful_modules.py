@@ -56,3 +56,4 @@ print(keyword.iskeyword('if'))
 True
 print(keyword.iskeyword('ozwald'))
 False 
+print(keyword.kwlist)
