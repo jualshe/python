@@ -41,3 +41,10 @@ print(len(my_animals))
 4
 print(len(more_animals))
 3
+
+more_animals = copy.deepcopy(my_animals)
+my_animals[0].species = 'dragon'
+print(my_animals[0].species)
+dragon
+print(more_animals[0].species)
+vampire
