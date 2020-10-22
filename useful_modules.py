@@ -57,3 +57,12 @@ True
 print(keyword.iskeyword('ozwald'))
 False 
 print(keyword.kwlist)
+
+#randint function
+import random
+print(random.randint(1, 100)) 
+58
+print(random.randint(100, 1000)) 
+861
+print(random.randint(1000, 5000)) 
+3795
