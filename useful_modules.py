@@ -66,3 +66,17 @@ print(random.randint(100, 1000))
 861
 print(random.randint(1000, 5000)) 
 3795
+
+import random
+num = random.randint(1, 100)
+while True:
+	print('guess the number from 1 to 100') 
+	guess = input()
+	i = int(guess)
+	if i == num:
+		print('yas!')  
+			break
+	elif i < num:
+		print('bigger')
+	elif i > num:
+		print('smaller')
