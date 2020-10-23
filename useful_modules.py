@@ -92,4 +92,16 @@ random.shuffle(desserts)
 print(desserts)
 ['muffin', 'icecream', 'chocolate', 'cookies', 'pancake']
 
+#sys module - exit,  stdin, stdout, version.
 
+import sys
+sys.exit()
+
+import sys
+v = sys.stdin.readline()
+who is who
+print(v)
+who is who
+#readline can have limit
+v = sys.stdin.readline(5)
+who i
