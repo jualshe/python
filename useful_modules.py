@@ -126,7 +126,15 @@ lots_of_numbers(1000)
 
 def lots_of_numbers(max): 
 		t1 = time.time()
-        for x in range(0, max):
-               print(x)
+		for x in range(0, max):
+			print(x)
 		t2 = time.time()
 		print(' %s seconds passed' % (t2-t1))
+
+lots_of_numbers(100)
+ 5.09859108925 seconds passed
+
+#asctime
+import time
+print(time.asctime()) 
+Thu Oct 22 23:58:46 2020
