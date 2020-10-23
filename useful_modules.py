@@ -19,7 +19,8 @@ print(harriet.species)
 
 
 harry = Animal('gippogriph', 6, 'pink')
-carrie = Animal('himera', 4, 'in green pees') >>> billy = Animal('bogl', 0, 'patterned')
+carrie = Animal('himera', 4, 'in green polka dot')
+billy = Animal('bogl', 0, 'patterned')
 my_animals = [harry, carrie, billy]
 more_animals = copy.copy(my_animals)
 print(more_animals[0].species)
@@ -68,15 +69,16 @@ print(random.randint(1000, 5000))
 3795
 
 import random
-num = random.randint(1, 100)
+num = random.randint(1, 10)
 while True:
-	print('guess the number from 1 to 100') 
+	print('guess the number from 1 to 10') 
 	guess = input()
 	i = int(guess)
 	if i == num:
 		print('yas!')  
-			break
+		break
 	elif i < num:
 		print('bigger')
 	elif i > num:
 		print('smaller')
+
