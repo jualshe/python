@@ -105,3 +105,28 @@ who is who
 #readline can have limit
 v = sys.stdin.readline(5)
 who i
+
+import sys
+sys.stdout.write("nindzia karate navaliaye tebe")
+#number of symbols will be added in the end of the line
+
+import sys
+print(sys.version)
+
+import time
+print(time.time())
+#amount of second from jan 1st 1970
+
+def lots_of_numbers(max):
+              for x in range(0, max):
+				print(x)
+
+lots_of_numbers(1000)
+
+
+def lots_of_numbers(max): 
+		t1 = time.time()
+        for x in range(0, max):
+               print(x)
+		t2 = time.time()
+		print(' %s seconds passed' % (t2-t1))
