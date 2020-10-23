@@ -59,7 +59,7 @@ print(keyword.iskeyword('ozwald'))
 False 
 print(keyword.kwlist)
 
-#randint function
+#random. randint function
 import random
 print(random.randint(1, 100)) 
 58
@@ -81,4 +81,15 @@ while True:
 		print('bigger')
 	elif i > num:
 		print('smaller')
+
+#random. choice
+desserts = ['icecream', 'pancake', 'muffin', 'cookie','chocolate']
+print(random.desserts)
+
+#random. shuffle
+#continue from random.choice
+random.shuffle(desserts)
+print(desserts)
+['muffin', 'icecream', 'chocolate', 'cookies', 'pancake']
+
 
