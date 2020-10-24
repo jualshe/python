@@ -138,3 +138,9 @@ lots_of_numbers(100)
 import time
 print(time.asctime()) 
 Thu Oct 22 23:58:46 2020
+
+t = (2020, 2, 23, 10, 30, 48, 6, 0, 0)
+
+import time
+t = (2020, 2, 23, 10, 30, 48, 6, 0, 0)  
+print(time.asctime(t))
