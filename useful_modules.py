@@ -144,3 +144,16 @@ t = (2020, 2, 23, 10, 30, 48, 6, 0, 0)
 import time
 t = (2020, 2, 23, 10, 30, 48, 6, 0, 0)  
 print(time.asctime(t))
+
+#localtime
+
+import time
+print(time.localtime())
+
+t = time.localtime()  
+year = t[0]
+month = t[1]
+print(year)
+2020
+print(month)
+10
