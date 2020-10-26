@@ -204,3 +204,6 @@ my_stuff_file= open('/Users/julia/Documents/GitHub/python/favorites.dat','wb')
 pickle.dump(stuff, my_stuff_file)
 my_stuff_file.close()
 
+open_favorites = open('/Users/julia/Documents/GitHub/python/favorites.dat','rb')
+my_stuff_file = pickle.load(open_favorites)
+print(my_stuff_file)
