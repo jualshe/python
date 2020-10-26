@@ -149,6 +149,7 @@ print(time.asctime(t))
 
 import time
 print(time.localtime())
+time.struct_time(tm_year=2020, tm_mon=10, tm_mday=25, tm_hour=21, tm_min=50, tm_sec=32, tm_wday=6, tm_yday=299, tm_isdst=1)
 
 t = time.localtime()  
 year = t[0]
@@ -157,3 +158,24 @@ print(year)
 2020
 print(month)
 10
+
+#sleep
+
+for x in range(1, 61):
+              print(x)
+
+for x in range(1, 61):
+        print(x)
+		time.sleep(1)              
+
+#pickle	
+import pickle
+game_data = {
+'position' : 'С23 В45',
+'pockets' : ['keys', 'knife', 'stone'], 
+'backpack' : ['rope', 'hummer', 'apple'],
+'money' : 158.50
+}
+save_file = open('save.dat', 'wb')
+pickle.dump(game_data, save_file)
+save_file.close()
