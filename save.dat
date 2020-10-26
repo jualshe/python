@@ -1,0 +1,27 @@
+(dp0
+S'position'
+p1
+S'\xd0\xa123 \xd0\x9245'
+p2
+sS'backpack'
+p3
+(lp4
+S'rope'
+p5
+aS'hummer'
+p6
+aS'apple'
+p7
+asS'pockets'
+p8
+(lp9
+S'keys'
+p10
+aS'knife'
+p11
+aS'stone'
+p12
+asS'money'
+p13
+F158.5
+s.
