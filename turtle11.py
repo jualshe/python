@@ -22,3 +22,8 @@ t.reset()
 for x in range(1, 38):
 	t.forward(100) 
 	t.left(175)
+
+t.reset()
+	for x in range(1, 20):
+	t.forward(100) 
+	t.left(95)
