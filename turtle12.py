@@ -81,3 +81,10 @@ def mystar(size, filled):
 			t.left(225)
 	if filled == True: 
 			t.end_fill()
+
+
+t.color(0.9, 0.75, 0)
+mystar(120, True)
+
+t.color(0,0,0)
+mystar(120, False)
