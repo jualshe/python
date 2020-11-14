@@ -10,28 +10,27 @@ btn.pack()
 # from turtle import * 
 # t = Pen()
 
+#latest working version
+from tkinter import *
+tk = Tk()
+btn = Button(tk, text="press me")
+btn.pack()
+btn = Button(tk, text="press me")
+btn.pack()
+mainloop()
 
- def hello():
- 	print('helloooo')
+def hello():
+	print('helloooo')
 
 
 from tkinter import *
 tk = Tk()
 btn = Button(tk, text="press me", command=hello)
 btn.pack()
-
-
-from tkinter import * ttk
-ttk.Button(text="Login").pack()
-
-
-import tkinter
-tkinter.Button(None, text='button').pack()
-tkinter.mainloop()
-
-#latest working version
-from tkinter import *
-tk = Tk()
-btn = Button(tk, text="press me")
-btn.pack()
 mainloop()
+
+def person(width, height):
+	print('My width - %s, and my height - %s' % (width, height))
+ 
+person(4, 3)
+person(height=3, width=4)
