@@ -32,5 +32,6 @@ tkinter.mainloop()
 #latest working version
 from tkinter import *
 tk = Tk()
-btn = Button(tk, text="press me") 
-btn.mainloop()
+btn = Button(tk, text="press me")
+btn.pack()
+mainloop()
