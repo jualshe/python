@@ -19,3 +19,6 @@ for x in range(0, 60):
 	canvas.move(1, 5, 5) 
 	tk.update() 
 	time.sleep(0.05)
+for x in range(0, 60): 
+	canvas.move(1, -5, -5)
+	tk.update() time.sleep(0.05)
