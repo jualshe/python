@@ -10,10 +10,16 @@ canvas.pack()
 tk.update()
 
 class Ball:
-    def _init_(self, canvas, color):
+    def __init__(self, canvas, color):
         self.canvas = canvas
         self.id = canvas.create_oval(10, 10, 25, 25, fill=color)
         self.canvas.move(self.id, 245, 100)
 
     def draw(self):
-        pass
+        self.canvas.move(self.id, 0, -1)
+
+ball = Ball(canvas, 'red')
+while 1: 
+	tk.update_idletasks() 
+	tk.update() 
+	time.sleep(0.01)
