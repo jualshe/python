@@ -19,7 +19,8 @@ class Ball:
         self.canvas.move(self.id, 0, -1)
 
 ball = Ball(canvas, 'red')
-while 1: 
-	tk.update_idletasks() 
-	tk.update() 
-	time.sleep(0.01)
+	while 1:
+		ball.draw()
+		tk.update_idletasks() 
+		tk.update() 
+		time.sleep(0.01)
