@@ -7,6 +7,9 @@ class Ball:
 		self.canvas = canvas
 		self.id = canvas.create_oval(10, 10, 25, 25, fill=color) 
 		self.canvas.move(self.id, 245, 100)
+		self.x = 0
+		self.y = -1
+		self.canvas_height = self.canvas.winfo_height()
 	def draw(self): 
 		self.canvas.move(self.id, 0, -1)
 tk = Tk()
