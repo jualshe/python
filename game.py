@@ -10,8 +10,7 @@ class Ball:
 		self.x = 0
 		self.y = -1
 		self.canvas_height = self.canvas.winfo_height()
-	def draw(self): 
-		self.canvas.move(self.id, 0, -1)
+	def draw(self):
 		self.canvas.move(self.id, self.x, self.y) 
 		pos = self.canvas.coords(self.id)
 		if pos[1] <= 0:
