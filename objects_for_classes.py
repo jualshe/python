@@ -21,11 +21,12 @@ class Giraffes(Mammals):
 
 reginald = Giraffes()
 
-def this_is_a_normal_function(): print('regular function')
+def this_is_a_normal_function(): 
+  print('regular function')
 
 class ThisIsMySillyClass:
-              def this_is_a_class_function():
-print('function of the class') 
+  def this_is_a_class_function():
+    print('function of the class') 
 
 def this_is_also_a_class_function():
                     print('it\'s also function of the class?')
@@ -45,6 +46,22 @@ class Mammals(Animals):
 class Giraffes(Mammals):
               def eat_leaves_from_trees(self):
 					pass
+
+class Animals(Animate):
+              def breathe(self):
+                    print('breathing')
+              def move(self):
+                    print('moving')
+              def eat_food(self):
+                    print('eat')
+
+class Mammals(Animals):
+              def feed_young_with_milk(self):
+                    print('feeding babies')
+
+class Giraffes(Mammals):
+              def eat_leaves_from_trees(self):
+                    print('eating leaves')                    
 reginald = Giraffes()
 
 reginald = Giraffes()
@@ -98,7 +115,7 @@ reginald = Giraffes()
 reginald.move()
 
 
-eginald = Giraffes() 
+reginald = Giraffes() 
 reginald.breathe() 
 reginald.eat_food()
 reginald.feed_young_with_milk()
