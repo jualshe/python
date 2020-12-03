@@ -61,7 +61,8 @@ class Mammals(Animals):
 
 class Giraffes(Mammals):
               def eat_leaves_from_trees(self):
-                    print('eating leaves')                    
+                    print('eating leaves')
+
 reginald = Giraffes()
 
 reginald = Giraffes()
@@ -148,3 +149,22 @@ ozwald = Giraffes(100)
 gertrude = Giraffes(150)
 print(ozwald.giraffe_spots)
 print(gertrude.giraffe_spots)
+
+
+class Giraffes(Mammals):
+  def left_foot_forward(self):
+    print('left_foot_forward')
+  def left_foot_back(self):
+    print('left_foot_back')
+  def right_foot_forward(self):
+    print('right_foot_forward')
+  def right_foot_back(self):
+    print('right_foot_back')
+
+class Giraffes(Mammals):
+  def dance(self):
+    self.left_foot_back()
+    self.left_foot_back()
+    self.right_foot_back()
+    self.right_foot_forward()
+    
