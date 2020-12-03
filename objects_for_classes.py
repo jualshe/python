@@ -1,23 +1,23 @@
 class Things:
-              pass
+  pass
 
 class Inanimate(Things):
-              pass
+  pass
 
 class Animate(Things):
-              pass
+  pass
 
 class Sidewalks(Inanimate):
-              pass
+  pass
 
 class Animals(Animate):
-              pass
+  pass
 
 class Mammals(Animals):
-              pass
+  pass
 
 class Giraffes(Mammals):
-              pass
+  pass
 
 reginald = Giraffes()
 
