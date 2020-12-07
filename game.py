@@ -59,3 +59,4 @@ while 1:
 
 
 #print(self.canvas.coords(self.id))
+#[255.0, 29.0, 270.0, 44.0]
