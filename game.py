@@ -14,6 +14,7 @@ class Ball:
         self.y = -3
         self.canvas_height = self.canvas.winfo_height()
         self.canvas_width = self.canvas.winfo_width()
+        self.hit_bottom = False
 
     def hit_paddle(self, pos):
         paddle_pos = self.canvas.coords(self.paddle.id)
@@ -28,12 +29,12 @@ class Ball:
         if pos[1] <= 0:
             self.y = 3
         if pos[3] >= self.canvas_height:
-            self.y = -3
+            self.hit_bottom = True
         if self.hit_paddle(pos) == True:
             self.y = -3
         if pos[0] <= 0:
             self.x = 3
-            if pos[2] >= self.canvas_width:
+        if pos[2] >= self.canvas_width:
             self.x = -3
 
 class Paddle:
@@ -70,12 +71,13 @@ tk.update()
 paddle = Paddle(canvas, 'blue')
 ball = Ball(canvas,paddle, 'red')
 
-while 1: 
-	ball.draw()
-	paddle.draw()
-	tk.update_idletasks() 
-	tk.update() 
-	time.sleep(0.01)
+while 1:
+    if ball.hit_bottom == False:
+        ball.draw()
+        paddle.draw()
+    tk.update_idletasks() 
+    tk.update() 
+    time.sleep(0.01)
 
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
