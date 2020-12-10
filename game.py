@@ -2,6 +2,8 @@ from tkinter import *
 import random
 import time
 
+#Delay before the start of the game
+
 class Ball:
     def __init__(self, canvas, paddle, color):
         self.canvas = canvas
@@ -78,6 +80,12 @@ while 1:
     tk.update_idletasks() 
     tk.update() 
     time.sleep(0.01)
+
+#Game score
+
+#Ball acceleration
+
+#End Game Screen
 
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
