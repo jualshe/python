@@ -3,7 +3,7 @@ import random
 import time
 
 #Delay before the start of the game
-
+#activate canvas by using left mouse click on the modal window
 class Ball:
     def __init__(self, canvas, paddle, color):
         self.canvas = canvas
