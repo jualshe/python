@@ -2,9 +2,17 @@ from tkinter import *
 import random
 import time
 
-#Delay before the start of the game
+#Delay before the start of the game - time.sleep(2)
 #activate canvas by using left mouse click on the modal window
 #add code for binding to events
+import tkinter as tk
+root = tk.Tk()
+var = tk.IntVar()
+button = tk.Button(root, text="Start Game!!!", command=lambda: var.set(1))
+button.place(relx=.5, rely=.5, anchor="c")
+
+button.wait_variable(var)
+
 class Ball:
     def __init__(self, canvas, paddle, color):
         self.canvas = canvas
