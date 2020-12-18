@@ -3,8 +3,7 @@ import random
 import time
 
 #Delay before the start of the game - time.sleep(2)
-#activate canvas by using left mouse click on the modal window
-#add code for binding to events
+
 import tkinter as tk
 root = tk.Tk()
 var = tk.IntVar()
