@@ -89,11 +89,14 @@ while 1:
     tk.update() 
     time.sleep(0.01)
 
-#Game score
+def game_over():
+	
+#Game score - add a game score showing how many times user played and won
 
-#Ball acceleration
+#Ball acceleration - increase the speed of the ball
 
-#End Game Screen
+#End Game Screen - show game is over screen
+
 
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
