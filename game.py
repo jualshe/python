@@ -89,8 +89,15 @@ while 1:
     tk.update() 
     time.sleep(0.01)
 
+root.after(2000, game_over)
+
 def game_over():
-	
+tk = Tk()
+canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
+canvas.pack()
+canvas.create_text(150, 100, text='game over!!')
+canvas.create_text(130, 120, text='in 2020.', fill='red')
+mainloop()
 #Game score - add a game score showing how many times user played and won
 
 #Ball acceleration - increase the speed of the ball
