@@ -9,7 +9,6 @@ root = tk.Tk()
 var = tk.IntVar()
 button = tk.Button(root, text="Start Game!!!", command=lambda: var.set(1))
 button.place(relx=.5, rely=.5, anchor="c")
-
 button.wait_variable(var)
 
 class Ball:
@@ -92,18 +91,20 @@ while 1:
 root.after(2000, game_over)
 
 def game_over():
-tk = Tk()
-canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
-canvas.pack()
-canvas.create_text(150, 100, text='game over!!')
-canvas.create_text(130, 120, text='in 2020.', fill='red')
-mainloop()
+	tk = Tk()
+	canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
+	canvas.pack()
+	canvas.create_text(150, 100, text='game over!!')
+	canvas.create_text(130, 120, text='in 2020.', fill='red')
+	tk.update()
+
 #Game score - add a game score showing how many times user played and won
 
 #Ball acceleration - increase the speed of the ball
 
 #End Game Screen - show game is over screen
-
+#create_ text
+#itemconfig (normal and hidden)
 
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
