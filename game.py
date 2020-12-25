@@ -95,8 +95,5 @@ while 1:
 	
 #Ball acceleration - increase the speed of the ball
 
-#End Game Screen - show game is over screen
-
-
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
