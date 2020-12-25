@@ -79,26 +79,19 @@ tk.update()
 
 paddle = Paddle(canvas, 'blue')
 ball = Ball(canvas,paddle, 'red')
+game_over_text = canvas.create_text(250, 200, text='GAME OVER !!', state='hidden')
 
 while 1:
     if ball.hit_bottom == False and paddle.started == True:
         ball.draw()
         paddle.draw()
+    if ball.hit_bottom == True:
+        time.sleep(1)
+        canvas.itemconfig(game_over_text, fill='red',font=('Helvetica', 30), state='normal')
+        
     tk.update_idletasks() 
     tk.update() 
     time.sleep(0.01)
-
-
-
-
-
-#Game score - add a game score showing how many times user played and won
-canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
-endgame = canvas.create_text(150, 100, text='end game !!',fill='red')
-#canvas.itemconfigure(endgame, fill='blue', state='hidden')
-canvas.pack()
-canvas.itemconfigure(endgame, fill='blue', state='normal')
-tk.mainloop()
 	
 #Ball acceleration - increase the speed of the ball
 
