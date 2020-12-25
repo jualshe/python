@@ -98,13 +98,22 @@ def game_over():
 	canvas.create_text(130, 120, text='in 2020.', fill='red')
 	tk.update()
 
-#Game score - add a game score showing how many times user played and won
-
-#Ball acceleration - increase the speed of the ball
-
 #End Game Screen - show game is over screen
 #create_ text
 #itemconfig (normal and hidden)
+
+tk = Tk()
+canvas = Canvas(tk, width=500, height=400)
+canvas.pack()
+endgame = canvas.create_text(150, 100, text='end game !!',fill='red')
+canvas.itemconfigure(endgame, fill='blue', state='hidden')
+canvas.itemconfigure(endgame, fill='blue', state='normal')
+tk.update()
+
+#Game score - add a game score showing how many times user played and won
+#itemconfig
+#Ball acceleration - increase the speed of the ball
+
 
 #print(self.canvas.coords(self.id))
 #[255.0, 29.0, 270.0, 44.0]
