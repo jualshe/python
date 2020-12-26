@@ -19,6 +19,12 @@ class Ball:
         paddle_pos = self.canvas.coords(self.paddle.id)
         if pos[2] >= paddle_pos[0] and pos[0] <= paddle_pos[2]:
             if pos[3] >= paddle_pos[1] and pos[3] <= paddle_pos[3]:
+            	#accelerate the ball
+            	#the ball to speed up if it’s travelling in the same horizontal direction when it
+				#hits the paddle, and slow down if it’s going in the opposite horizontal direction. 
+				#In order to do this, the left-right (horizontal) speed of
+				#the paddle should be added to the horizontal speed of the ball
+            	self.x += self.paddle.x
                 return True
             return False
     def draw(self):
