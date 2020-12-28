@@ -68,6 +68,12 @@ class Paddle:
         elif pos[2] >= self.canvas_width:
             self.x = 0
 
+class Score:
+ 	def __init__(self, canvas, color):
+		self.score = 0
+		self.canvas = canvas
+		self.id = canvas.create_text(450, 10, text=self.score, fill=color)
+
 tk = Tk()
 tk.title("Game")
 tk.resizable(0, 0)
