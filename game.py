@@ -67,13 +67,6 @@ class Paddle:
             self.x = 0
         elif pos[2] >= self.canvas_width:
             self.x = 0
-class End:
-    def game_over():
-        tk = Tk()
-        canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
-        canvas.pack()
-        canvas.create_text(150, 100, text='game over!!')
-        tk.update()
 
 tk = Tk()
 tk.title("Game")
