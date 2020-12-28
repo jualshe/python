@@ -85,6 +85,7 @@ canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
 canvas.pack()
 tk.update()
 
+score = Score(canvas, 'green')
 paddle = Paddle(canvas, 'blue')
 ball = Ball(canvas,paddle, 'red')
 game_over_text = canvas.create_text(250, 200, text='GAME OVER !!', state='hidden')
