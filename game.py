@@ -26,6 +26,7 @@ class Ball:
 				#In order to do this, the left-right (horizontal) speed of
 				#the paddle should be added to the horizontal speed of the ball
             	self.x += self.paddle.x
+            	self.score.hit()
                 return True
             return False
     def draw(self):
