@@ -5,10 +5,10 @@
 
 #create graphics for the game
 
-#human
+#human - a little man who can move to the right, left and jump; Stickman - a man drawn with lines
 
-#3 sizes of a platform
+#platforms in three different sizes
 
 #doors : open and close
 
-#background (something fun)
+#background (if we want the game to look nice, a solid white or gray background doesn't work for us). (something fun)
