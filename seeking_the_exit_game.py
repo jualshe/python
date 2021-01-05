@@ -12,3 +12,9 @@
 #doors : open and close
 
 #background (if we want the game to look nice, a solid white or gray background doesn't work for us). (something fun)
+
+from tkinter import *
+import random
+import time
+class Game:
+	def __init__(self):
