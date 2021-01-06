@@ -103,7 +103,6 @@ while 1:
 	if ball.hit_bottom == True:
 		time.sleep(1)
 		canvas.itemconfig(game_over_text, fill='red',font=('Helvetica', 20), state='normal')
-
-    tk.update_idletasks() 
-    tk.update() 
-    time.sleep(0.01)
+tk.update_idletasks() 
+tk.update()
+time.sleep(0.01)
