@@ -4,7 +4,6 @@ import random
 import time
 
 class Ball:
-
 	def __init__(self, canvas, paddle, score, color):
 		self.canvas = canvas
 		self.paddle = paddle
