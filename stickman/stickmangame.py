@@ -49,8 +49,12 @@ g = Game()
 g.mainloop()
 
 class Coords:
-def __init__(self, x1=0, y1=0, x2=0, y2=0):
-	self.x1 = x1 
-	self.y1 = y1 
-	self.x2 = x2 
-	self.y2 = y2
+	def __init__(self, x1=0, y1=0, x2=0, y2=0):
+		self.x1 = x1 
+		self.y1 = y1 
+		self.x2 = x2 
+		self.y2 = y2
+
+def within_x(co1, co2):
+	if co1.x1 > co2.x1 and co1.x1 < co2.x2:
+		return True
