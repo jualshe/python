@@ -62,3 +62,7 @@ def within_x(co1, co2):
 		return True
 	elif co2.x1 > co1.x1 and co2.x1 < co1.x2:
 		return True
+	elif co2.x2 > co1.x1 and co2.x2 < co1.x2:
+        return True
+    else:
+    	return False
