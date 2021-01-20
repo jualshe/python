@@ -63,3 +63,6 @@ def within_x(co1, co2):
 		return True
     else:
     	return False
+
+def within_y(co1, co2):
+	#vertical
