@@ -72,3 +72,5 @@ def within_y(co1, co2):
               return True
           else:
 return False
+
+def collided_left(co1, co2):
