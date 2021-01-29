@@ -83,3 +83,12 @@ def collided_left(co1, co2):
 #c2 = Coords(50, 50, 150, 150)
 #print(within_x(c1, c2))
 #True
+
+def within_x(co1, co2):
+	if (co1.x1 > co2.x1 and co1.x1 < co2.x2) \
+		or (co1.x2 > co2.x1 and co1.x2 < co2.x2) \
+		or (co2.x1 > co1.x1 and co2.x1 < co1.x2) \
+		or (co2.x2 > co1.x1 and co2.x2 < co1.x2):
+              return True
+          else:
+return False
