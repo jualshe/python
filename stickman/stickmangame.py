@@ -98,3 +98,9 @@ def collided_left(co1, co2):
 		if co1.x1 <= co2.x2 and co1.x1 >= co2.x1:
 			return True
 	return False
+
+def collided_right(co1, co2):
+	if within_y(co1, co2):
+   		if co1.x2 >= co2.x1 and co1.x2 <= co2.x2: 
+   			return True
+	return False
